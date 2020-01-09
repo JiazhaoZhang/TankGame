@@ -45,10 +45,10 @@ public class MyPanel extends JPanel implements Runnable {
 	private Image img_2 = null;
 	private Image img_3 = null;
 
-	public static int BORDER_MIN_X = 0;
-	public static int BORDER_MIN_Y = 0;
-	public static int BORDER_MAX_X = 600;
-	public static int BORDER_MAX_y = 450;
+	public static final int BORDER_MIN_X = 0;
+	public static final int BORDER_MIN_Y = 0;
+	public static final int BORDER_MAX_X = 600;
+	public static final int BORDER_MAX_y = 450;
 	public static int NUMBER_OF_ENEMIES = 4;
 	public static int NUMBER_OF_WALLS_IN_ONE_ROW = 16;
 	public static boolean PLAYER_WINS = false;

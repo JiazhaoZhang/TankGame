@@ -7,7 +7,12 @@ import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
 import com.TankGame.entities.Tank;
-
+/**
+ * 
+ * @author Zhang's laptop
+ * This is the class which inhibit main function for this game
+ * Press w to go up, s to go down, a to go left, d to go right, j to fire a bullet
+ */
 public class MainFrame extends JFrame{
 
 	private MyPanel panel;

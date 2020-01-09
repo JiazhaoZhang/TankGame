@@ -27,29 +27,29 @@ public class Tank implements Runnable, Entity {
 	private Color type;
 	private boolean isAlive = true;
 
-	public static int TO_LEFT = 0;
-	public static int TO_DOWN = 1;
-	public static int TO_RIGHT = 2;
-	public static int TO_UP = 3;
+	public static final int TO_LEFT = 0;
+	public static final int TO_DOWN = 1;
+	public static final int TO_RIGHT = 2;
+	public static final int TO_UP = 3;
 	/**
 	 * maximum number of bullets a tank can fire
 	 */
-	public static int MAX_BULLETS = 5;
-	public static Color PLAYER = Color.CYAN;
-	public static Color ENEMY = Color.PINK;
-	public static String PLAYER_NAME = "hero";
+	public static final int MAX_BULLETS = 5;
+	public static final Color PLAYER = Color.CYAN;
+	public static final Color ENEMY = Color.PINK;
+	public static final String PLAYER_NAME = "hero";
 	
 	/**
 	 * the width and height a tank will strech when it going to left or right
 	 */
-	public static int HORIZONTAL_WIDTH = 35;
-	public static int HORIZONTAL_HEIGHT = 20;
+	public static final int HORIZONTAL_WIDTH = 35;
+	public static final int HORIZONTAL_HEIGHT = 20;
 	
 	/**
 	 * the width and height a tank will strech when it going to up or down
 	 */
-	public static int VERTICAL_WIDTH = 20;
-	public static int VERTICAL_HEIGHT = 35;
+	public static final int VERTICAL_WIDTH = 20;
+	public static final int VERTICAL_HEIGHT = 35;
 
 	private int speed = 3;
 

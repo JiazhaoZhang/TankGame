@@ -29,8 +29,8 @@ public class Bullet implements Runnable,Entity{
 	private boolean isAlive = true;
 	private Color type;
 	
-	public static Color PLAYER_BULLET = Color.ORANGE;
-	public static Color ENEMY_BULLET = Color.GREEN;
+	public static final Color PLAYER_BULLET = Color.ORANGE;
+	public static final Color ENEMY_BULLET = Color.GREEN;
 	
 	/**
 	 * Constructor
