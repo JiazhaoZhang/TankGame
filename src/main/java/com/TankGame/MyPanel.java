@@ -35,7 +35,7 @@ public class MyPanel extends JPanel implements Runnable {
 	//walls
 	private Vector<Wall> walls = new Vector<Wall>();
 
-	private static Vector<Entity> entities = new Vector<Entity>();
+	public static Vector<Entity> entities = new Vector<Entity>();
 
 	/**
 	 * three images that will create the scene of explode when a
