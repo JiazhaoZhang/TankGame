@@ -133,9 +133,16 @@ public class MyPanel extends JPanel implements Runnable {
 
 			//try to preload the image to memory
 			//not a good solution, I will see if there is better one
-			g.drawImage(img_1, 100, 500, 50, 50, this);
-			g.drawImage(img_2, 150, 500, 50, 50, this);
-			g.drawImage(img_3, 200, 500, 50, 50, this);
+			g.drawImage(img_1, 100, 600, 50, 50, this);
+			g.drawImage(img_2, 150, 600, 50, 50, this);
+			g.drawImage(img_3, 200, 600, 50, 50, this);
+			
+			//draw instructions
+			g.setColor(Color.RED);
+			Font font = new Font("TimesRoman", Font.BOLD, 15);
+			g.setFont(font);
+			g.drawString("W for going up, S for going down, A for going left, D for going right", 30, BORDER_MAX_y+20);
+			g.drawString("J for firing a bullet", 30, BORDER_MAX_y+40);
 			
 			// draw the player's tank
 			if (tank.isAlive()) {
@@ -167,15 +174,15 @@ public class MyPanel extends JPanel implements Runnable {
 			//Tell player he/she wins
 			if(MyPanel.PLAYER_WINS) {
 				g.setColor(Color.RED);
-				Font font = new Font("TimesRoman", Font.BOLD, 30);
-				g.setFont(font);
+				Font font_player_win = new Font("TimesRoman", Font.BOLD, 30);
+				g.setFont(font_player_win);
 				g.drawString("CONGRATS, YOU WIN", 150, 200);
 			}
 			
 			if(MyPanel.PLAYER_LOSSES) {
 				g.setColor(Color.RED);
-				Font font = new Font("TimesRoman", Font.BOLD, 30);
-				g.setFont(font);
+				Font font_player_lose = new Font("TimesRoman", Font.BOLD, 30);
+				g.setFont(font_player_lose);
 				g.drawString("SORRY, YOU LOSE", 150, 200);
 			}
 			

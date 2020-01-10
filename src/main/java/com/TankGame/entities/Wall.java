@@ -4,7 +4,8 @@ import java.awt.Color;
 
 /**
  * 
- * @author Zhang's laptop This class represent a piece of wall on the canvas
+ * @author Zhang's laptop 
+ * This class represent a piece of wall on the canvas
  */
 public class Wall implements Entity {
 
@@ -18,9 +19,9 @@ public class Wall implements Entity {
 	/**
 	 * width and height of a piece of wall
 	 */
-	public static int WIDTH = 20;
-	public static int HEIGHT = 15;
-	public static Color TYPE_IS_WALL = Color.YELLOW;
+	public static final int WIDTH = 20;
+	public static final int HEIGHT = 15;
+	public static final Color TYPE_IS_WALL = Color.YELLOW;
 	
 	public Wall(int x, int y) {
 		this.x = x;
